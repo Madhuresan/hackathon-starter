@@ -12,6 +12,7 @@
     "postinstall": "npm rebuild node-sass",
     "start": "node app.js",
     "test": "nyc mocha --timeout=3000 --exit",
+    "test-mochaawesome": "nyc --reporter=html mocha test/*.js --reporter mochawesome --exit",
     "lint": "eslint \"**/*.js\""
   },
   "dependencies": {
